@@ -1,0 +1,39 @@
+{
+  "name": "ze-engineering-code-challenge",
+  "version": "0.0.1",
+  "description": "Ze Backend Challenge",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "lint": "eslint src/**",
+    "test": "jest",
+    "build": "webpack && cp package.json dist/ && cp -r data dist/"
+  },
+  "author": "@mvt-dev",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvt-dev/ze-engineering-code-challenge.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "babel-jest": "^25.3.0",
+    "eslint": "^5.9.0",
+    "jest": "^25.3.0",
+    "nodemon": "^1.18.6",
+    "supertest": "^4.0.2",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@turf/turf": "^5.1.6",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  }
+}
